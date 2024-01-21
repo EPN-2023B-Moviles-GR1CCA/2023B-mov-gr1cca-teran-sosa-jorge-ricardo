@@ -3,9 +3,9 @@ package com.example.examenibricardoteran
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainInterface : AppCompatActivity() {
+class VerInmueble : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main_interface)
+        setContentView(R.layout.activity_ver_inmueble)
     }
 }

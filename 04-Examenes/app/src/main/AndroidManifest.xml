@@ -13,11 +13,20 @@
         android:theme="@style/Theme.ExamenIBRicardoTeran"
         tools:targetApi="31">
         <activity
-            android:name=".MainInterface"
+            android:name=".ActualizarInmueble"
+            android:exported="false" />
+        <activity
+            android:name=".ActualizarInmobiliaria"
+            android:exported="false" />
+        <activity
+            android:name=".VerInmueble"
+            android:exported="false" />
+        <activity
+            android:name=".Inmueble"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/Theme.ExamenIBRicardoTeran">
             <intent-filter>
@@ -26,6 +35,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Inmobiliaria"
+            android:exported="false"
+            android:label="@string/title_activity_inmobiliaria"
+            android:theme="@style/Theme.ExamenIBRicardoTeran" />
+        <activity
+            android:name=".MainInterface"
+            android:exported="false" />
     </application>
 
 </manifest>

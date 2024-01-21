@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ExamenIBRicardoTeran</string>
+    <string name="title_activity_inmobiliaria">Inmobiliaria</string>
+    <string name="nombre_imobiliaria">Nombre Imobiliaria</string>
+    <string name="actualizar_inmobiliaria">Actualizar Inmobiliaria</string>
+    <string name="direcci_n">Dirección</string>
+    <string name="id">ID</string>
 </resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inmueble">
+
+
+    <EditText
+        android:id="@+id/editText_idinmobiliaria"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="ID Inmobiliaria"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview_inmueble"
+        tools:layout_editor_absoluteY="378dp" />
+
+    <EditText
+        android:id="@+id/editText_tipo"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Tipo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_idinmobiliaria" />
+
+    <EditText
+        android:id="@+id/editText_direccion"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_precio" />
+
+    <EditText
+        android:id="@+id/editText_precio"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_tipo" />
+
+    <EditText
+        android:id="@+id/editText_antiguead"
+        android:layout_width="194dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Antiguedad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_direccion" />
+
+    <Button
+        android:id="@+id/button_insertar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insertar Inmueble"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_antiguead"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ListView
+        android:id="@+id/listview_inmueble"
+        android:layout_width="406dp"
+        android:layout_height="320dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_idinmobiliaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarInmueble">
+
+    <EditText
+        android:id="@+id/et_upd_idInmueble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ID INMUEBLE"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.116" />
+
+    <EditText
+        android:id="@+id/et_upd_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Tipo Inmueble"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idInmueble"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idInmueble"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idInmueble" />
+
+    <EditText
+        android:id="@+id/et_upd_direccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_tipo"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_tipo"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_tipo" />
+
+    <EditText
+        android:id="@+id/et_upd_precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_direccion"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_direccion"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_direccion" />
+
+    <EditText
+        android:id="@+id/et_upd_antiguedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Antiguedad"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_precio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_precio"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_precio" />
+
+    <EditText
+        android:id="@+id/et_upd_idInmobiliaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="ID INMOBILIARIA"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_antiguedad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_antiguedad"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_antiguedad" />
+
+    <Button
+        android:id="@+id/btn_actualizarInmueble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Actualizar Inmueble"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idInmobiliaria"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idInmobiliaria"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idInmobiliaria" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

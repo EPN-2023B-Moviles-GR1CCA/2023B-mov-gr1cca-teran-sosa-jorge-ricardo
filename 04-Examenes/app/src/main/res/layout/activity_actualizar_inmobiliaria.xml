@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActualizarInmobiliaria">
+
+    <EditText
+        android:id="@+id/et_upd_idInm"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="@string/id"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
+
+    <EditText
+        android:id="@+id/et_upd_nombInm"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_idInm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_idInm"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_idInm" />
+
+    <EditText
+        android:id="@+id/et_upd_direcInm"
+        android:layout_width="194dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/direcci_n"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_nombInm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_nombInm"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_nombInm" />
+
+    <Button
+        android:id="@+id/btn_actualizarInm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/actualizar_inmobiliaria"
+        app:layout_constraintEnd_toEndOf="@+id/et_upd_direcInm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_upd_direcInm"
+        app:layout_constraintTop_toBottomOf="@+id/et_upd_direcInm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
