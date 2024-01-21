@@ -37,11 +37,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="INSERTAR INMOBILIARIA"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_direccionInm" />
+        app:layout_constraintBottom_toTopOf="@+id/editText_nombreInm"
+        app:layout_constraintTop_toBottomOf="@+id/listview_inmobiliaria"
+        tools:layout_editor_absoluteX="108dp" />
 
     <ListView
         android:id="@+id/listview_inmobiliaria"
