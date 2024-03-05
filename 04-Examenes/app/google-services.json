@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "988597620550",
+    "project_id": "examenmoviles2b",
+    "storage_bucket": "examenmoviles2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:988597620550:android:cccc740cd7aa7c1e871f47",
+        "android_client_info": {
+          "package_name": "com.example.examenibricardoteran"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp8Hp9PXayXUpLmgvBs_zGm-4PXX4UbfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -15,8 +15,11 @@ import android.widget.ListView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.examenibricardoteran.db.DbInmobiliaria
+import com.google.firebase.firestore.FirebaseFirestore
 
 class Inmobiliaria : AppCompatActivity() {
+
+    private val dbFirestore = FirebaseFirestore.getInstance()
 
     companion object{
         var idInmobiliariaSeleccionado = 0
@@ -32,6 +35,15 @@ class Inmobiliaria : AppCompatActivity() {
 
         val btnInsertar = findViewById<Button>(R.id.btn_insertarInm)
         btnInsertar.setOnClickListener {
+
+            dbFirestore.collection("inmobiliaria").document().set(
+                hashMapOf(
+                    "nombre" to nombre.text.toString(),
+                    "direccion" to direccion.text.toString()
+                )
+
+            )
+
             val inmobiliaria = DbInmobiliaria(
                 null,
                 nombre.text.toString(),

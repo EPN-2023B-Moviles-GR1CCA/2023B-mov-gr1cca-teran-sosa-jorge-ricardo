@@ -6,8 +6,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.examenibricardoteran.db.DbInmobiliaria
+import com.google.firebase.firestore.FirebaseFirestore
 
 class ActualizarInmobiliaria : AppCompatActivity() {
+
+    private val dbFirestore = FirebaseFirestore.getInstance()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actualizar_inmobiliaria)
@@ -25,6 +28,23 @@ class ActualizarInmobiliaria : AppCompatActivity() {
 
         val btn_actualizarInmobiliaria = findViewById<Button>(R.id.btn_actualizarInm)
         btn_actualizarInmobiliaria.setOnClickListener {
+            //Actualizar Inmobiliaria Firestone
+            dbFirestore.collection("inmobiliaria").whereEqualTo("nombre", inmobiliaria.getnombreInmobiliaria())
+                .get()
+                .addOnSuccessListener { documents ->
+                    for (document in documents) {
+                        dbFirestore.collection("inmobiliaria").document(document.id).set(
+                            hashMapOf(
+                                "nombre" to nombre.text.toString(),
+                                "direccion" to direccion.text.toString()
+                            )
+                        )
+                    }
+                }
+                .addOnFailureListener { exception ->
+                    Toast.makeText(this, "Error al actualizar registro", Toast.LENGTH_LONG).show()
+                }
+
             // Inmobiliaria actualizado
             inmobiliaria.setnombreInmobiliaria(nombre.text.toString())
             inmobiliaria.setdireccionInmobiliaria(direccion.text.toString())
@@ -32,7 +52,7 @@ class ActualizarInmobiliaria : AppCompatActivity() {
 
             if (resultado > 0) {
                 Toast.makeText(this, "REGISTRO ACTUALIZADO", Toast.LENGTH_LONG).show()
-                cleanEditText()
+//                cleanEditText()
             } else {
                 Toast.makeText(this, "ERROR AL ACTUALIZAR REGISTRO", Toast.LENGTH_LONG).show()
             }
